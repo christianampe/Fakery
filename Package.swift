@@ -14,8 +14,9 @@ let package = Package(
 
     ],
     targets: [
-      .target(name: "Fakery",
-              resources: .process("Resources")),
-      .testTarget(name: "FakeryTests", dependencies: ["Fakery","Quick", "Nimble"], path: "Tests/Fakery")
+        .target(name: "Fakery",
+                dependencies: [],
+                resources: [.copy("Resources")]),
+        .testTarget(name: "FakeryTests", dependencies: ["Fakery","Quick", "Nimble"], path: "Tests/Fakery")
     ]
 )
