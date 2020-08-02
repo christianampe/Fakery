@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .target(name: "Fakery",
                 dependencies: [],
-                resources: [.process("Resources/Locales")]),
+                resources: [.process("Resources/Locales/en-US.json")]),
         .testTarget(name: "FakeryTests",
                     dependencies: ["Fakery","Quick", "Nimble"],
                     path: "Tests/Fakery")
