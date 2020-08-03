@@ -12,11 +12,13 @@ public final class Provider {
     
     let bundle = Bundle.module
     
-    guard
-        let path = bundle.path(forResource: locale, ofType: Config.pathExtension),
-        let url = URL(string: path),
-        let data = try? Data(contentsOf: url)
-    else {
+    guard let path = bundle.path(forResource: locale, ofType: Config.pathExtension) else {
+        return nil
+    }
+    
+    let url = URL(fileURLWithPath: path)
+    
+    guard let data = try? Data(contentsOf: url) else {
         return nil
     }
     
