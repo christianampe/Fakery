@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "pt-BR.json",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
