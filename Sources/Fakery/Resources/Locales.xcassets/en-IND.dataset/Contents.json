@@ -2,7 +2,8 @@
   "data" : [
     {
       "filename" : "en-IND.json",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "universal-type-identifier" : "json"
     }
   ],
   "info" : {

@@ -2,7 +2,8 @@
   "data" : [
     {
       "filename" : "zh-CN.json",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "universal-type-identifier" : "json"
     }
   ],
   "info" : {
